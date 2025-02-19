@@ -10,6 +10,12 @@ Aplicação Web com artigos e dicas dobre práticas sustentáveis.
 
 ODS Alinhados:
 
+06 - Água limpa e saneamento
+07 - Energia limpa e acessível
+13 - Ação contra a mudança global do clima
+14 - Vida na água
+15 - Vida terrestre
+
 ## Integrantes
 
 * Gabriel Augusto Lana Vidal
