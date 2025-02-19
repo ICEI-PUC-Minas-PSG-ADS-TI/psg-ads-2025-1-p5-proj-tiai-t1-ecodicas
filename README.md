@@ -1,20 +1,20 @@
-# EcoDicas -Aplicação Web com artigos e dicas dobre práticas sustentáveis.
+# EcoDicas
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Trabalho Interdisciplinar: Aplicações Inovadoras`
 
-`SEMESTRE`
+`2025/1`
 
-Aplicação Web com artigos e dicas dobre práticas sustentáveis.
+O EcoDicas é uma aplicação web simples e intuitiva que oferece dicas diárias sobre práticas sustentáveis, com o objetivo de incentivar um estilo de vida mais ecológico e consciente. O projeto visa ajudar as pessoas a adotarem comportamentos mais responsáveis em relação ao meio ambiente, fornecendo sugestões práticas e fáceis de implementar no cotidiano. As dicas abrangem tópicos como redução de resíduos, consumo consciente e escolhas mais verdes, promovendo a sustentabilidade no dia a dia.
 
 ODS Alinhados:
 
-06 - Água limpa e saneamento
-07 - Energia limpa e acessível
-13 - Ação contra a mudança global do clima
-14 - Vida na água
-15 - Vida terrestre
+> 06 - Água limpa e saneamento<br>
+> 07 - Energia limpa e acessível<br>
+> 13 - Ação contra a mudança global do clima<br>
+> 14 - Vida na água<br>
+> 15 - Vida terrestre<br>
 
 ## Integrantes
 
