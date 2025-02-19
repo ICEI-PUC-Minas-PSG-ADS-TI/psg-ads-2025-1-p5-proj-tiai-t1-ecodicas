@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# EcoDicas -Aplicação Web com artigos e dicas dobre práticas sustentáveis.
 
 `CURSO`
 
@@ -6,20 +6,20 @@
 
 `SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Aplicação Web com artigos e dicas dobre práticas sustentáveis.
 
 ODS Alinhados:
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Gabriel Augusto Lana Vidal
+* Gustavo Meira Becattini
+* Hebert Tadeu de Castro Liberato
+* Pedro Henrique da Silva Araújo Queiroz
 
 ## Orientador
 
-* Nome completo do professor 1
+* Juliana Padilha
 
 ## Instruções de utilização
 
