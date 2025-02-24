@@ -7,12 +7,15 @@ Apesar da crescente conscientização sobre as questões ambientais, muitos cida
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Objetivo Geral:
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Desenvolver uma plataforma web simples e intuitiva que centralize e divulgue dicas de práticas sustentáveis, incentivando a adoção de hábitos ecológicos no dia a dia dos usuários.
+
+Objetivos Específicos:
+
+* Criar um ambiente digital com interface amigável que permita a publicação recorrente de dicas sobre o meio ambiente.
+
+* Incorporar um sistema de categorização de dicas, permitindo que os usuários filtrem conteúdos por temas, como reciclagem, economia de energia, consumo consciente, entre outros, facilitando o acesso a informações relevantes de acordo com suas necessidades e interesses.
 
 ## Justificativa
 
