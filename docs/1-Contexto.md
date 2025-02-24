@@ -1,18 +1,9 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O EcoDicas é uma plataforma web que visa disseminar práticas sustentáveis por meio da oferta recorrente de dicas simples e acessíveis. Inserido no contexto atual de crescente preocupação com as mudanças climáticas e a degradação ambiental, o projeto busca preencher a lacuna entre o conhecimento técnico sobre sustentabilidade e a aplicação prática no cotidiano das pessoas. O EcoDicas propõe criar um espaço colaborativo, onde os usuários consumam conteúdo educativo, contribuindo para uma comunidade mais consciente e engajada.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Apesar da crescente conscientização sobre as questões ambientais, muitos cidadãos enfrentam dificuldades para adotar práticas sustentáveis devido à falta de informações práticas e de fácil acesso. O problema reside na dispersão e complexidade dos conteúdos disponíveis, que não traduzem, de forma direta, as ações que podem ser incorporadas na rotina diária. Esse cenário, aliado à necessidade urgente de mudança nos hábitos de consumo e descarte, evidencia a importância de uma ferramenta simples e didática que ajude a transformar o interesse em ações concretas, servindo tanto a indivíduos quanto a comunidades que buscam um estilo de vida mais sustentável.
 
 ## Objetivos
 
