@@ -19,7 +19,7 @@ Objetivos Específicos:
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+A urgência em enfrentar os desafios ambientais atuais demanda a democratização do acesso à informação prática e aplicável em nível individual e comunitário. O EcoDicas justifica-se pela necessidade de transformar o conhecimento ambiental em ações cotidianas, facilitando a mudança de comportamento e a adoção de práticas que reduzem impactos negativos ao meio ambiente. Ao utilizar uma abordagem de baixo custo e fácil implementação, o projeto tem potencial para alcançar um público diversificado, promovendo a educação ambiental e incentivando uma cultura de sustentabilidade que pode repercutir positivamente em diversas esferas da sociedade.
 
 O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
 
