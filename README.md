@@ -10,11 +10,11 @@ O EcoDicas é uma aplicação web simples e intuitiva que oferece dicas diárias
 
 ODS Alinhados:
 
-> 06 - Água limpa e saneamento<br>
-> 07 - Energia limpa e acessível<br>
-> 13 - Ação contra a mudança global do clima<br>
-> 14 - Vida na água<br>
-> 15 - Vida terrestre<br>
+- 06 - Água limpa e saneamento<br>
+- 07 - Energia limpa e acessível<br>
+- 13 - Ação contra a mudança global do clima<br>
+- 14 - Vida na água<br>
+- 15 - Vida terrestre<br>
 
 ## Integrantes
 
