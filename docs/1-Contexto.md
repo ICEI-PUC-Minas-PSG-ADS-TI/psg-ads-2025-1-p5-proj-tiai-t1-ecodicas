@@ -7,11 +7,11 @@ Apesar da crescente conscientização sobre as questões ambientais, muitos cida
 
 ## Objetivos
 
-Objetivo Geral:
+**Objetivo Geral:**
 
 Desenvolver uma plataforma web simples e intuitiva que centralize e divulgue dicas de práticas sustentáveis, incentivando a adoção de hábitos ecológicos no dia a dia dos usuários.
 
-Objetivos Específicos:
+**Objetivos Específicos:**
 
 * Criar um ambiente digital com interface amigável que permita a publicação recorrente de dicas sobre o meio ambiente.
 
