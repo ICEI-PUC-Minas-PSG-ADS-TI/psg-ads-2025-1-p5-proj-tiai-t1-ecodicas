@@ -1,16 +1,19 @@
 
 # 3. Especificações do Projeto
 
-
 ## 3.1 Classificação dos Requisitos Funcionais x Requisitos não Funcionais 
-
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito                  | Prioridade |
-|------|-----------------------------------------|------------|
-|RF-001| Permitir que o usuário cadastre tarefas |    ALTA    | 
-|RF-002| Emitir um relatório de tarefas no mês   |    MÉDIA   |
+|ID    | Descrição do Requisito                                                                                     | Prioridade |
+|------|------------------------------------------------------------------------------------------------------------|------------|
+|RF-001| O sistema deve permitir que o admin publiquem dicas de sustentabilidade no blog.                           |    ALTA    | 
+|RF-002| Os usuários devem poder filtrar dicas por categorias.                                                      |    BAIXA   |
+|RF-003| O sistema deve permitir o cadastro de usuários.                                                            |    MÉDIA   |
+|RF-004| O sistema deve permitir ao admin editar e excluir dicas publicadas.                                        |    ALTA    |
+|RF-005| O sistema deve disponibilizar um mecanismo de pesquisa para que os usuários encontrem dicas específicas.   |    MÉDIA   |
+|RF-006| O sistema deve exibir a data de publicação de cada dica no blog.                                           |    MÉDIA   |
+|RF-007| O sistema deve permitir ao admin visualizar uma lista de todas as dicas cadastradas.                       |    MÉDIA   |
 
 
 ### Requisitos não Funcionais
