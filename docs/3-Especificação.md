@@ -20,8 +20,10 @@
 
 |ID     | Descrição do Requisito                                            |Prioridade |
 |-------|-------------------------------------------------------------------|-----------|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel |    MÉDIA  | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s             |    BAIXA  | 
+|RNF-001| Usabilidade: O site deve ter uma interface intuitiva e fácil de navegar. |    MÉDIA  | 
+|RNF-002| Desempenho: O site deve ser rápido e responsivo para uma boa experiência do usuário.         |    MÉDIA  | 
+|RNF-001| Disponibilidade: O site deve estar disponível 24/7. |    MÉDIA  | 
+|RNF-002| Compatibilidade: O site deve ser compatível com diferentes navegadores e dispositivos, incluindo desktop, tablet e smartphone.             |    ALTA  | 
 
 
 ## Restrições
