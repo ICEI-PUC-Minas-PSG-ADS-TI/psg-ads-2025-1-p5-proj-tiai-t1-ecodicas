@@ -1,29 +1,9 @@
 
 # 3. Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="2-Planejamento-Projeto.md"> Planejamento do Projeto do Software (Cronograma) </a></span>
-
-> Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição das histórias de usuários, dos requisitos funcionais e não funcionais além das restrições do projeto.
-
-> Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
 
 ## 3.1 Classificação dos Requisitos Funcionais x Requisitos não Funcionais 
 
-> Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-> - **[Requisitos Funcionais (RF)]**(https://pt.wikipedia.org/wiki/Requisito_funcional): correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-> - **[Requisitos Não Funcionais (RNF)]**(https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-
-> Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
-
-
-### a) Modifique os quadros abaixo, inserindo os Requisitos Funcionais e Não Funcionais do seu projeto. 
-
-Lembre-se de classificá-los de acordo com a prioridade: ALTA, MÉDIA ou BAIXA.
 
 ### Requisitos Funcionais
 
@@ -41,24 +21,12 @@ Lembre-se de classificá-los de acordo com a prioridade: ALTA, MÉDIA ou BAIXA.
 |RNF-002| Deve processar requisições do usuário em no máximo 3s             |    BAIXA  | 
 
 
-
-### b) Modifique o Quadro abaixo e insira as Restrições para o seu projeto.
-
-O projeto está restrito pelos itens apresentados na tabela a seguir.
-
 ## Restrições
 
 |ID| Restrição                                               |
 |--|---------------------------------------------------------|
 |01| O software deve ser compatível com Windows e Linux.     |
 |02| O sistema deve ser desenvolvido utilizando Java e MySQL.|
-
-**Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.**
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
-
 
 
 ## 3.2 Histórias de Usuários
