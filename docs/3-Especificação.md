@@ -23,18 +23,16 @@
 
 ## Restrições
 
-|ID| Restrição                                               |
-|--|---------------------------------------------------------|
-|01| O software deve ser compatível com Windows e Linux.     |
-|02| O sistema deve ser desenvolvido utilizando Java e MySQL.|
+|ID| Restrição                                                                                                                                             |
+|--|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+|01| O software deverá ser entregue até o fim do semestre letivo 01/2025.                                                                                  |
+|02| O sistema deve ser desenvolvido utilizando Bootstrap, Firebase e Javascript.                                                                          |
+|03| A plataforma deve permitir apenas um SuperUser autenticado para gerenciar e publicar novas postagens, sem a necessidade de criação de usuários comuns.|
+|04| O sistema não deverá armazenar dados sensíveis de usuários.                                                                                           |
+
 
 
 ## 3.2 Histórias de Usuários
-> Apresente aqui as histórias de usuário que são RELEVANTES para o projeto de sua solução. É esperado que haja pelo menos 10 histórias de usuário, dependendo do projeto escolhido para desenvolver.
-
-**OBS:** Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-### a) Modifique o Quadro abaixo e insira as histórias de usuários para o seu projeto.
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
