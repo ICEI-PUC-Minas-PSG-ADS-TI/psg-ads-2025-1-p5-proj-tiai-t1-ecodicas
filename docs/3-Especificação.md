@@ -22,8 +22,8 @@
 |-------|-------------------------------------------------------------------|-----------|
 |RNF-001| Usabilidade: O site deve ter uma interface intuitiva e fácil de navegar. |    MÉDIA  | 
 |RNF-002| Desempenho: O site deve ser rápido e responsivo para uma boa experiência do usuário.         |    MÉDIA  | 
-|RNF-001| Disponibilidade: O site deve estar disponível 24/7. |    MÉDIA  | 
-|RNF-002| Compatibilidade: O site deve ser compatível com diferentes navegadores e dispositivos, incluindo desktop, tablet e smartphone.             |    ALTA  | 
+|RNF-003| Disponibilidade: O site deve estar disponível 24/7. |    MÉDIA  | 
+|RNF-004| Compatibilidade: O site deve ser compatível com diferentes navegadores e dispositivos, incluindo desktop, tablet e smartphone.             |    ALTA  | 
 
 
 ## Restrições
