@@ -66,8 +66,7 @@ Cada história do usuário é dividida em tarefas específicas para implementaç
 ## História de Usuário: 
                      Como cliente, eu quero fazer login no sistema para acessar meu perfil.
 
-## As tarefas técnicas referente a história podem ser:
-                  # Tarefas Técnicas - Projeto EcoDicas
+## tarefas Técnicas:
 
 ## 1. Criação da Interface de Login
 **Objetivo:** Desenvolver a interface de login para o **Administrador**, que poderá gerenciar as postagens.
