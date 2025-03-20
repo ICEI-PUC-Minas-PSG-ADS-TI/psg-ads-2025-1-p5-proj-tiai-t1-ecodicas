@@ -61,7 +61,7 @@ Atualizado em: 18/03/2025
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
 | Gabriel Vidal | Planejamento do projeto | 18/03/2025 | 20/03/2025 | ✔️ | 18/03/2025 |
 | Gustavo Meira | Levantamento de Requisitos funcionais e restrições  | 16/03/2025 | 20/03/2025 | ✔️ | 18/03/2025 |
-| Hebert Tadeu | Histórias de usuário  | 17/03/2025 | 20/03/2025 | 📝  | -- |
+| Hebert Tadeu | Histórias de usuário  | 17/03/2025 | 20/03/2025 | ✔️  | 19/03/2025 |
 | Pedro Henrique | Tarefas técnicas | 17/03/2025 | 20/03/2025 | ✔️ | 19/03/2025 |
 
 Legenda:
