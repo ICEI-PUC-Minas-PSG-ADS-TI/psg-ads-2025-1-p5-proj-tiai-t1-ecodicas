@@ -41,10 +41,10 @@
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-|  xxxx              | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|  yyy               | Alterar permissões                 | Permitir que possam administrar contas |
+|Usuário do sistema  | Criar uma conta no sistema          |Para poder acessar dicas no site.             |
+|Usuário do sistema       | Comentar em uma dica               | Trocar experiências e tirar dúvidas com outros usuários|
+| Administrador          | Aprovar ou recusar sugestões de dicas dos usuários          | Garantir que apenas conteúdos confiáveis sejam publicados              |
+|  visitante           | desejo acessar as dicas sustentáveis publicadas na plataforma                | aprender práticas ecológicas |
 
 
 
