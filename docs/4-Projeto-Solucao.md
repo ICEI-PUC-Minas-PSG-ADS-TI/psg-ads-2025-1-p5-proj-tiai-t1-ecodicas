@@ -4,16 +4,29 @@
 
 ## 4.1. Arquitetura da solução
 
+Dado que o projeto será baseado em HTML, CSS, JavaScript e Bootstrap, e utilizará o Firebase como banco de dados, adotamos uma arquitetura simples e eficiente.
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+### Camadas da Arquitetura
 
- Inclua um diagrama da solução e descreva os módulos e as tecnologias
- que fazem parte da solução. Discorra sobre o diagrama.
+- Frontend (Interface do Usuário):
+  - HTML, CSS e Bootstrap para a estrutura e estilização da página.
+  - JavaScript para interatividade e manipulação de dados.
+  - Firebase Authentication (se necessário futuramente para login do SuperUser).
+
+- Backend (Gerenciamento de Dados no Firebase):
+  - Firebase Firestore para armazenar as postagens das dicas sustentáveis.
+  - Firebase Storage para armazenar imagens ou mídias associadas às postagens.
+  - Firebase Hosting para hospedar a aplicação estática.
+
+- Administração (Área Restrita para o SuperUser):
+  - Página protegida onde o SuperUser pode adicionar, editar ou excluir postagens.
+  - Regras de segurança do Firebase configuradas para permitir acesso apenas ao SuperUser.
  
- **Exemplo do diagrama de Arquitetura**:
- 
- ![Exemplo de Arquitetura](./images/arquitetura-exemplo.png)
- 
+ ### Exemplo do diagrama de Arquitetura:
+
+ ![HTML + CSS + JS + Bootstrap](https://github.com/user-attachments/assets/7281ade9-14fa-45d1-8f3b-5048e7d2068b)
+
+
 
 ### 4.2. Protótipos de telas
 
