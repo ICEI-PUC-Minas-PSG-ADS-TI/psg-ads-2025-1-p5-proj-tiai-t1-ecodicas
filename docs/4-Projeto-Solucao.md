@@ -136,15 +136,15 @@ Este script deverá ser incluído em um arquivo .sql na pasta src\bd.
 
 ### 4.4. Tecnologias
 
-_Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas._
+As tecnologias que serão usadas para o desenvolvimento do projeto serão as que seguem e interagem entre si de acordo com a figura a seguir
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+![image](https://github.com/user-attachments/assets/51b974b1-c7c9-4519-9a5c-974ac0d0e223)
 
 
 | **Dimensão**   | **Tecnologia**  |
 | ---            | ---             |
-| SGBD           | MySQL           |
-| Front end      | HTML+CSS+JS     |
-| Back end       | Java SpringBoot |
+| SGBD           | Firebase           |
+| Front end      | HTML+CSS+Bootstrap     |
+| Back end       | JavaScript |
 | Deploy         | Github Pages    |
 
