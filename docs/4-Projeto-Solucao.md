@@ -157,7 +157,7 @@ As tecnologias que serão usadas para o desenvolvimento do projeto serão as que
 | **Dimensão**   | **Tecnologia**  |
 | ---            | ---             |
 | SGBD           | Firebase           |
-| Front end      | HTML+CSS+Bootstrap     |
+| Front end      | HTML+CSS+JS+Bootstrap     |
 | Back end       | JavaScript |
 | Deploy         | Github Pages    |
 
