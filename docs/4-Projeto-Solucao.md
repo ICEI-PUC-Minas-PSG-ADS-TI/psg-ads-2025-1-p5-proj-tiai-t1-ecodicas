@@ -21,12 +21,15 @@
 O sistema do EcoDicas possui diversas telas diferentes, de acordo com as funcionalidades e os requisitos levantados anteriormente.
 
 ![WhatsApp Image 2025-03-18 at 20 18 40_31558353](https://github.com/user-attachments/assets/a890fcea-12f5-420c-9e69-1f29cf661dd7)
+
 Página de efetuar uma postagem nova
 
 ![WhatsApp Image 2025-03-18 at 16 11 58_0fc9faad](https://github.com/user-attachments/assets/761c688f-99a2-438a-a44b-023a5a43dfe2)
+
 Home page com postagens no meio e no asside uma loja de produtos sustentáveis
 
 ![WhatsApp Image 2025-03-18 at 16 26 44_9ce1377e](https://github.com/user-attachments/assets/89bc35e6-2aba-4b4d-a61c-b3d859e78534)
+
 Página da postagem do blog
 
 
