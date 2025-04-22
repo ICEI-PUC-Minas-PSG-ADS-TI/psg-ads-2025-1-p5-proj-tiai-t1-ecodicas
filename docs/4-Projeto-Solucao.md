@@ -149,8 +149,6 @@ Este script deverá ser incluído em um arquivo .sql na pasta src\bd.
 
 As tecnologias que serão usadas para o desenvolvimento do projeto serão as que seguem e interagem entre si de acordo com a figura a seguir
 
-![image](https://github.com/user-attachments/assets/51b974b1-c7c9-4519-9a5c-974ac0d0e223)
-
 
 | **Dimensão**   | **Tecnologia**  |
 | ---            | ---             |
