@@ -54,73 +54,59 @@ O diagrama de classes ilustra graficamente como será a estrutura do software, e
 ![EcoDicasClasses](https://github.com/user-attachments/assets/48c6d1b7-28de-4140-bcfe-e1a39b9f4b6a)
 
 
-## Modelo ER
+## Modelo de Dados
 
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
-
-Por se tratar de um banco de dados não relacional (NoSQL), não temos um modelo de Entidade Relacionamento, somente os scripts para a criação das coleções.
+O projeto, por fazer uso de um banco de dados não relacional (NoSQL), não temos um modelo de Entidade Relacionamento, somente os scripts para a criação das coleções.
 
 ### 4.3. Modelo de dados
 
-O desenvolvimento da solução proposta requer a existência de bases de dados que permitam efetuar os cadastros de dados e controles associados aos processos identificados, assim como recuperações.
-Utilizando a notação do DER (Diagrama Entidade e Relacionamento), elaborem um modelo, na ferramenta visual indicada na disciplina, que contemple todas as entidades e atributos associados às atividades dos processos identificados. Deve ser gerado um único DER que suporte todos os processos escolhidos, visando, assim, uma base de dados integrada. O modelo deve contemplar, também, o controle de acesso de usuários (partes interessadas dos processos) de acordo com os papéis definidos nos modelos do processo de negócio.
-_Apresente o modelo de dados por meio de um modelo relacional que contemple todos os conceitos e atributos apresentados na modelagem dos processos._
+Utilizaremos como base de dados o Firebase Firestore, um banco NoSQL, ele usa uma estrutura baseada em coleções e documentos (em vez de tabelas e linhas como em bancos relacionais). A modelagem é orientada a documentos e mais flexível.
 
 
 
 #### 4.3.3 Modelo Físico
 
-Insira aqui o script de criação das tabelas do banco de dados.
+veja aqui exemplos dos script de criação das collections do banco de dados.
 
-> **OBS:** Se o aluno utilizar BD NoSQL, ele derá incluir o script aqui também. 
+Coleção: posts
+Cada documento representa uma postagem.
+```
+db.collection("posts").add({
+  titulo: "Como economizar energia em casa",
+  conteudo: "Desligue aparelhos da tomada quando não estiverem em uso...",
+  categoria: "Energia",
+  dataPublicacao: new Date(),
+  imagemURL: "https://firebase.storage.url/eco-dicas/energia.jpg",
+  status: "ativo"
+})
+.then((docRef) => {
+  console.log("Post criado com ID:", docRef.id);
+})
+.catch((error) => {
+  console.error("Erro ao criar post:", error);
+});
+```
+>  ID do documento: será gerado automaticamente pelo Firestore ou pode ser definido por você (ex: post_001)
 
-Veja um exemplo:
+Coleção: categorias
+Com a intenção de termos categorias consistentes, manteremos em uma coleção separada:
+```
+db.collection("categorias").add({
+  nome: "Energia",
+  descricao: "Dicas para economia de energia elétrica"
+});
+```
 
-<code>
-
- -- Criação da tabela Médico
-CREATE TABLE Medico (
-    MedCodigo INTEGER PRIMARY KEY,
-    MedNome VARCHAR(100)
-);
-
-
--- Criação da tabela Paciente
-CREATE TABLE Paciente (
-    PacCodigo INTEGER PRIMARY KEY,
-    PacNome VARCHAR(100)
-);
-
--- Criação da tabela Consulta
-CREATE TABLE Consulta (
-    ConCodigo INTEGER PRIMARY KEY,
-    MedCodigo INTEGER,
-    PacCodigo INTEGER,
-    Data DATE,
-    FOREIGN KEY (MedCodigo) REFERENCES Medico(MedCodigo),
-    FOREIGN KEY (PacCodigo) REFERENCES Paciente(PacCodigo)
-);
-
--- Criação da tabela Medicamento
-CREATE TABLE Medicamento (
-    MdcCodigo INTEGER PRIMARY KEY,
-    MdcNome VARCHAR(100)
-);
-
--- Criação da tabela Prescricao
-CREATE TABLE Prescricao (
-    ConCodigo INTEGER,
-    MdcCodigo INTEGER,
-    Posologia VARCHAR(200),
-    PRIMARY KEY (ConCodigo, MdcCodigo),
-    FOREIGN KEY (ConCodigo) REFERENCES Consulta(ConCodigo),
-    FOREIGN KEY (MdcCodigo) REFERENCES Medicamento(MdcCodigo)
-);
-
-</code>
-
-Este script deverá ser incluído em um arquivo .sql na pasta src\bd.
-
+Coleção: users
+Mesmo que atualmente só exista o SuperUser, registraremos:
+```
+db.collection("users").add({
+  nome: "Administrador",
+  email: "admin@ecodicas.com",
+  role: "superuser",
+  criadoEm: new Date()
+});
+```
 
 
 
