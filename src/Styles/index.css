@@ -1,0 +1,35 @@
+
+
+
+.navbar {
+    background-color: var(--azul-escuro);
+}
+
+.hero {
+    background: linear-gradient(160deg, var(--verde-agua), var(--azul-escuro));
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.btn-eco {
+    background-color: var(--branco);
+    color: var(--azul-quase-preto);
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1rem;
+}
+
+.btn-eco:hover {
+    background-color: var(--cinza-claro);
+}

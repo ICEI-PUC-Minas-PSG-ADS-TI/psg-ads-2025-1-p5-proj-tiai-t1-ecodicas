@@ -1,0 +1,35 @@
+
+body {
+    padding-bottom: 3rem;
+}
+
+.form-control,
+.form-label {
+    background-color: transparent;
+    color: var(--branco);
+}
+
+.form-control::placeholder {
+    color: #cccccc;
+}
+
+.form-section {
+    background-color: var(--azul-acinzentado);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000022;
+}
+
+.btn-publish {
+    background-color: var(--verde-agua);
+    color: var(--branco);
+    border: none;
+    padding: 0.6rem 2rem;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.btn-publish:hover {
+    background-color: var(--cinza-claro);
+    color: var(--azul-quase-preto);
+}
