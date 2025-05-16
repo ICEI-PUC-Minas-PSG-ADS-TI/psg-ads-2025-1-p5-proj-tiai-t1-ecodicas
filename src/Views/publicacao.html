@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoDicas</title>
+  <title>Publicação - EcoDicas</title>
 
-  <!-- Bootstrap CSS / icons -->
+  <!-- Bootstrap CSS + Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  
   <!-- Fonte personalizada -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  
-  <link rel="stylesheet" type="text/css" href="../Styles/all.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="../Styles/index.css" media="screen" />
 
+  <link rel="stylesheet" type="text/css" href="../Styles/all.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../Styles/publicacao.css" media="screen" />
+  
 </head>
 <body>
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark px-4">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold" href="index.html">EcoDicas</a>
@@ -50,78 +49,40 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero text-white">
-    <div class="container">
-      <h1>Transforme seu dia com pequenas atitudes sustentáveis</h1>
-      <p>Descubra dicas práticas e acessíveis para viver de forma mais consciente e ecológica.</p>
-      <a href="portal.html" class="btn btn-eco">Veja as Dicas</a>
-    </div>
-  </section>
+  <div class="container py-5">
 
-    <!-- Seção de Destaque -->
-  <section class="py-5" style="background-color: var(--azul-acinzentado);">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Imagem -->
-        <div class="col-md-6 mb-4 mb-md-0">
-          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb" alt="Planta sustentável" class="img-fluid rounded shadow">
-        </div>
+    <div class="mb-4">
+      <a href="index.html" class="btn btn-back btn-sm mb-3">
+        <i class="bi bi-arrow-left"></i> Voltar
+      </a>
 
-        <!-- Texto -->
-        <div class="col-md-6 text-white">
-          <h2 class="fw-bold">Dicas que inspiram mudanças reais</h2>
-          <p class="mt-3">
-            O EcoDicas reúne práticas simples que ajudam você a cuidar do planeta, começando dentro de casa. Economize energia, reduza o desperdício e compartilhe atitudes que fazem a diferença.
-          </p>
-          <a href="#sobre" class="btn btn-outline-light mt-3">Saiba mais</a>
+      <div class="post-header">
+        <h1>Como economizar água sem esforço</h1>
+        <p class="lead">Pequenas atitudes no dia a dia que fazem grande diferença no uso da água.</p>
+        <div class="post-meta mt-2">
+          <i class="bi bi-calendar-event"></i> Publicado em: 15/05/2025 &nbsp; • &nbsp;
+          <i class="bi bi-clock-history"></i> Última edição: 16/05/2025 &nbsp; • &nbsp;
+          <i class="bi bi-book"></i> Leitura: 4 min
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Seção de Destaques -->
-
-    <section class="py-5" style="background-color: var(--verde-agua);">
-    <div class="container text-center text-white">
-        <h2 class="fw-bold mb-5">Comece com pequenas atitudes</h2>
-        <div class="row g-4">
-
-        <div class="col-md-4">
-            <div class="p-4 rounded shadow" style="background-color: var(--azul-escuro);">
-            <div class="mb-3">
-                <i class="bi bi-recycle" style="font-size: 2.5rem;"></i>
-            </div>
-            <h5>Recicle</h5>
-            <p class="mb-0">Separe corretamente seus resíduos e reduza o impacto no meio ambiente.</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="p-4 rounded shadow" style="background-color: var(--azul-escuro);">
-            <div class="mb-3">
-                <i class="bi bi-lightbulb-fill" style="font-size: 2.5rem;"></i>
-            </div>
-            <h5>Economize Energia</h5>
-            <p class="mb-0">Desligue aparelhos quando não estiverem em uso e opte por lâmpadas LED.</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="p-4 rounded shadow" style="background-color: var(--azul-escuro);">
-            <div class="mb-3">
-                <i class="bi bi-droplet-half" style="font-size: 2.5rem;"></i>
-            </div>
-            <h5>Preserve a Água</h5>
-            <p class="mb-0">Feche a torneira enquanto escova os dentes e reaproveite água sempre que possível.</p>
-            </div>
-        </div>
-
-        </div>
+    <div class="mb-4">
+      <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb" alt="Torneira aberta com água" class="img-fluid rounded shadow">
+      <figcaption class="text-white-50 small mt-2">Feche a torneira ao escovar os dentes. Imagem: Unsplash</figcaption>
     </div>
-    </section>
 
-    <footer class="text-white py-4" style="background-color: var(--azul-quase-preto);">
+    <!-- Conteúdo do artigo -->
+    <div class="post-body">
+      <p>No dia a dia, não percebemos o quanto de água desperdiçamos em pequenas ações. Escovar os dentes com a torneira aberta, lavar louças com o jato contínuo ou demorar no banho são hábitos que podem ser repensados.</p>
+
+      <p>Uma atitude simples, como fechar a torneira enquanto ensaboa a louça ou usar baldes para lavar o carro, pode gerar uma economia significativa ao longo do mês — e o planeta agradece.</p>
+
+      <p>Além disso, vale investir em tecnologias como torneiras com temporizador, vasos sanitários com duplo acionamento e reaproveitamento de água da máquina de lavar para outras finalidades.</p>
+    </div>
+
+  </div>
+  <footer class="text-white py-4" style="background-color: var(--azul-quase-preto);">
     <div class="container">
         <div class="row">
 
@@ -159,7 +120,8 @@
         <p class="text-center text-white-50 mb-0">© 2025 EcoDicas. Todos os direitos reservados.</p>
     </div>
     </footer>
-    <!-- Bootstrap JS -->
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

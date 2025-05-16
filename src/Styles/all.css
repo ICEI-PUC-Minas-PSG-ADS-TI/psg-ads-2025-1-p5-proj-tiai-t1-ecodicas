@@ -7,6 +7,21 @@
     --azul-acinzentado: #112836;
 }
 
+.navbar {
+    background-color: var(--azul-escuro);
+}
+
+#restrito {
+    background-color: var(--verde-agua);
+    border: 0;
+    border-radius: 5pt;
+}
+
+#txt {
+    color: var(--branco);
+}
+
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: var(--azul-quase-preto);

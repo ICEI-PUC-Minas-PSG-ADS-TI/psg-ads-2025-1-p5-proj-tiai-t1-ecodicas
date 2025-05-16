@@ -3,8 +3,7 @@ body {
     padding-bottom: 3rem;
 }
 
-.form-control,
-.form-label {
+.form-control, .form-label {
     background-color: transparent;
     color: var(--branco);
 }

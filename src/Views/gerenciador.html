@@ -3,21 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoDicas</title>
+  <title>Gerenciar Posts - EcoDicas</title>
 
-  <!-- Bootstrap CSS / icons -->
+  <!-- Bootstrap CSS + Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  
   <!-- Fonte personalizada -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-  
-  <link rel="stylesheet" type="text/css" href="../Styles/all.css" media="screen" />
-  <link rel="stylesheet" type="text/css" href="../Styles/index.css" media="screen" />
 
+  <link rel="stylesheet" type="text/css" href="../Styles/all.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="../Styles/gerenciador.css" media="screen" />
+  
 </head>
 <body>
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark px-4">
     <div class="container-fluid">
       <a class="navbar-brand fw-bold" href="index.html">EcoDicas</a>
@@ -50,78 +49,58 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero text-white">
-    <div class="container">
-      <h1>Transforme seu dia com pequenas atitudes sustentáveis</h1>
-      <p>Descubra dicas práticas e acessíveis para viver de forma mais consciente e ecológica.</p>
-      <a href="portal.html" class="btn btn-eco">Veja as Dicas</a>
+  <div class="container py-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="fw-bold">Gerenciar Postagens</h2>
+      <a href="editor.html" class="btn btn-novo">
+        <i class="bi bi-plus-lg"></i> Novo Post
+      </a>
     </div>
-  </section>
 
-    <!-- Seção de Destaque -->
-  <section class="py-5" style="background-color: var(--azul-acinzentado);">
-    <div class="container">
-      <div class="row align-items-center">
-        <!-- Imagem -->
-        <div class="col-md-6 mb-4 mb-md-0">
-          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb" alt="Planta sustentável" class="img-fluid rounded shadow">
-        </div>
-
-        <!-- Texto -->
-        <div class="col-md-6 text-white">
-          <h2 class="fw-bold">Dicas que inspiram mudanças reais</h2>
-          <p class="mt-3">
-            O EcoDicas reúne práticas simples que ajudam você a cuidar do planeta, começando dentro de casa. Economize energia, reduza o desperdício e compartilhe atitudes que fazem a diferença.
-          </p>
-          <a href="#sobre" class="btn btn-outline-light mt-3">Saiba mais</a>
-        </div>
+    <!-- Filtros -->
+    <div class="row g-3 mb-4">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Buscar por título..." id="filtroTitulo">
+      </div>
+      <div class="col-md-3">
+        <input type="date" class="form-control" id="filtroPublicacao">
+      </div>
+      <div class="col-md-3">
+        <input type="date" class="form-control" id="filtroEdicao">
       </div>
     </div>
-  </section>
 
-  <!-- Seção de Destaques -->
-
-    <section class="py-5" style="background-color: var(--verde-agua);">
-    <div class="container text-center text-white">
-        <h2 class="fw-bold mb-5">Comece com pequenas atitudes</h2>
-        <div class="row g-4">
-
-        <div class="col-md-4">
-            <div class="p-4 rounded shadow" style="background-color: var(--azul-escuro);">
-            <div class="mb-3">
-                <i class="bi bi-recycle" style="font-size: 2.5rem;"></i>
-            </div>
-            <h5>Recicle</h5>
-            <p class="mb-0">Separe corretamente seus resíduos e reduza o impacto no meio ambiente.</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="p-4 rounded shadow" style="background-color: var(--azul-escuro);">
-            <div class="mb-3">
-                <i class="bi bi-lightbulb-fill" style="font-size: 2.5rem;"></i>
-            </div>
-            <h5>Economize Energia</h5>
-            <p class="mb-0">Desligue aparelhos quando não estiverem em uso e opte por lâmpadas LED.</p>
-            </div>
-        </div>
-
-        <div class="col-md-4">
-            <div class="p-4 rounded shadow" style="background-color: var(--azul-escuro);">
-            <div class="mb-3">
-                <i class="bi bi-droplet-half" style="font-size: 2.5rem;"></i>
-            </div>
-            <h5>Preserve a Água</h5>
-            <p class="mb-0">Feche a torneira enquanto escova os dentes e reaproveite água sempre que possível.</p>
-            </div>
-        </div>
-
-        </div>
+    <!-- Tabela de posts -->
+    <div class="table-responsive">
+      <table class="table table-dark table-striped align-middle">
+        <thead>
+          <tr>
+            <th>Título</th>
+            <th>Data de publicação</th>
+            <th>Última Edição</th>
+            <th class="text-end">Ações</th>
+          </tr>
+        </thead>
+        <tbody id="lista-posts">
+          <!-- Exemplo de linha -->
+          <tr>
+            <td>Como economizar água em casa</td>
+            <td>2025-04-30</td>
+            <td>2025-05-10</td>
+            <td class="text-end">
+              <a href="editor.html?id=?" class="btn btn-sm btn-outline-light me-2">
+                <i class="bi bi-pencil-fill"></i> Editar
+              </a>
+              <button class="btn btn-sm btn-outline-danger">
+                <i class="bi bi-trash-fill"></i> Excluir
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    </section>
-
-    <footer class="text-white py-4" style="background-color: var(--azul-quase-preto);">
+  </div>
+  <footer class="text-white py-4" style="background-color: var(--azul-quase-preto);">
     <div class="container">
         <div class="row">
 
@@ -159,7 +138,20 @@
         <p class="text-center text-white-50 mb-0">© 2025 EcoDicas. Todos os direitos reservados.</p>
     </div>
     </footer>
-    <!-- Bootstrap JS -->
+
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script de filtro (exemplo básico, substituível por Firebase realtime) -->
+  <script>
+    document.getElementById('filtroTitulo').addEventListener('input', function () {
+      const filtro = this.value.toLowerCase();
+      document.querySelectorAll('#lista-posts tr').forEach(row => {
+        const titulo = row.cells[0].textContent.toLowerCase();
+        row.style.display = titulo.includes(filtro) ? '' : 'none';
+      });
+    });
+  </script>
+
 </body>
 </html>
