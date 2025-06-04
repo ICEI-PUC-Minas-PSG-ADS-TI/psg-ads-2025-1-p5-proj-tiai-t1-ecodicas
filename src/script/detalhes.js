@@ -1,52 +1,53 @@
-import { fetchPostById } from "./api.js";
+import { fetchDados } from "./api.js";
 
-export async function MostrarPost() {
-    const urlParams = new URLSearchParams(window.location.search);
-    const parametroId = urlParams.get("id");
+const postDetailContainer = document.getElementById("post-detalhe-container"); // Você precisará deste ID em detalhe.html
 
-    const principal = document.getElementById("main");
-
-     if (!principal) {
-        console.error("Elemento com ID 'main' não encontrado na página de detalhes!");
+async function carregarEExibirDetalhesPost() {
+    if (!postDetailContainer) {
+        console.error("Elemento 'post-detalhe-container' não encontrado no HTML.");
         return;
     }
 
-    principal.innerHTML = '<p>Carregando detalhes da dica...</p>';
+    postDetailContainer.innerHTML = '<p class="text-center">Carregando detalhes do post...</p>';
 
+    const urlParams = new URLSearchParams(window.location.search);
+    const postId = urlParams.get("id"); // Pega o 'id' da URL
 
-    if (parametroId !== null && parametroId !== "") {
-        console.log("ID encontrado na URL:", parametroId);
+    if (!postId) {
+        postDetailContainer.innerHTML = '<p class="text-center text-danger">ID do post não encontrado na URL.</p>';
+        console.error("Nenhum ID de post encontrado na URL.");
+        return;
+    }
 
-        try {
-            const post = await fetchPostById(parametroId);
+    console.log("ID do post encontrado na URL:", postId);
 
-            if (post) {
+    try {
+        const post = await fetchDados(postId); // Busca o post específico pelo ID
 
-                principal.innerHTML = `
-                    <div class="post-detalhes">
-                        <h1>${post.titulo || 'Título Indisponível'}</h1>
-                        ${post.imagemUrlDetalhe ? `<img src="${post.imagemUrlDetalhe}" alt="${post.titulo || 'Imagem do post'}">` : ''}
-                        <p>${post.descricaoCompleta || post.descricao || 'Descrição detalhada indisponível.'}</p>
-                        <!-- Adicione mais campos aqui conforme o seu modelo de dados no Firestore -->
-                        <small>ID do Post: ${post.id}</small>
-                    </div>
-                    <p><a href="index.html">Voltar para a lista de dicas</a></p>
-                `;
-            } else {
-
-                console.log("Nenhum post encontrado com o ID:", parametroId);
-                principal.innerHTML = `<p>Ops! A dica com o ID "${parametroId}" não foi encontrada.</p>`;
-            }
-
-        } catch (error) {
-
-            console.error("Erro ao carregar os detalhes do post:", error);
-            principal.innerHTML = `<p>Erro ao carregar os detalhes da dica: ${error.message}</p>`; // Exibe mensagem de erro
+        if (!post) {
+            postDetailContainer.innerHTML = `<p class="text-center text-danger">Post com ID '${postId}' não encontrado.</p>`;
+            return;
         }
 
-
-    } else {
-        console.log("Nenhum ID de post encontrado na URL.");
-        principal.innerHTML = '<p>Por favor, selecione uma dica para ver os detalhes.</p>';
+        postDetailContainer.innerHTML = `
+            <div class="post-detalhes">
+                <h1>${post.titulo || 'Título Indisponível'}</h1>
+                ${post.imagemUrl ? `<img src="${post.imagemUrl}" alt="${post.titulo || 'Imagem do post'}" class="img-fluid rounded mb-3">` : ''}
+                <div class="lead mb-3">Tempo de leitura: ${post.tempoLeitura || 'N/A'} minutos</div>
+                <hr>
+                <div class="conteudo-post">
+                    ${post.conteudo ? post.conteudo.replace(/\n/g, '<br>') : 'Conteúdo indisponível.'}
+                </div>
+                <!-- Adicione mais campos aqui conforme o seu modelo de dados -->
+                <p class="mt-4"><a href="portal.html" class="btn btn-secondary">Voltar para a lista de dicas</a></p>
+            </div>
+        `;
+    } catch (error) {
+        console.error("Erro ao carregar detalhes do post:", error);
+        if (postDetailContainer) {
+            postDetailContainer.innerHTML = `<p class="text-center text-danger">Erro ao carregar o post. Tente novamente mais tarde.</p><p class="text-center text-muted small">${error.message}</p>`;
+        }
     }
 }
+
+document.addEventListener('DOMContentLoaded', carregarEExibirDetalhesPost);
