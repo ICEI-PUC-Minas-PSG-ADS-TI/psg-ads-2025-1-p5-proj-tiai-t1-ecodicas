@@ -50,3 +50,10 @@
 .mini-post span {
     font-size: 0.9rem;
 }
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}

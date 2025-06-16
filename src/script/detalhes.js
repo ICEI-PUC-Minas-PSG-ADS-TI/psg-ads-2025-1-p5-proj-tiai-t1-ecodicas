@@ -33,7 +33,7 @@ async function carregarEExibirDetalhesPost() {
             <div class="post-detalhes">
                 <h1>${post.titulo || 'Título Indisponível'}</h1>
                 ${post.imagemUrl ? `<img src="${post.imagemUrl}" alt="${post.titulo || 'Imagem do post'}" class="img-fluid rounded mb-3">` : ''}
-                <div class="lead mb-3">Tempo de leitura: ${post.tempoLeitura || 'N/A'} minutos</div>
+                
                 <hr>
                 <div class="conteudo-post">
                     ${post.conteudo ? post.conteudo.replace(/\n/g, '<br>') : 'Conteúdo indisponível.'}

@@ -24,18 +24,19 @@ async function carregarEExibirPosts() {
                 const post = todosOsPosts[postId];
 
                 conteudoHTML += `
-                    <div class="col"> <!-- Bootstrap cuidará do número de colunas por linha -->
-                        <div class="card h-100"> <!-- h-100 para cards da mesma altura -->
-                            ${post.imagemUrl ? `<img src="${post.imagemUrl}" class="card-img-top" alt="${post.titulo || 'Imagem do post'}">` : '<div class="card-img-top-placeholder">Sem Imagem</div>'}
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title">${post.titulo || 'Sem título'}</h5>
-                                ${post.tempoLeitura ? `<p class="card-text text-muted small">${post.tempoLeitura} min de leitura</p>` : ''}
-                                <!-- Se você tiver uma descrição curta, adicione aqui -->
-                                <!-- <p class="card-text">${post.descricaoCurta || ''}</p> -->
-                                <a href="detalhe.html?id=${postId}" class="btn btn-primary mt-auto">Ver Detalhes</a>
-                            </div>
+                <div class="col-12 col-sm-6 col-md-4 mb-4">
+                    <a href="detalhe.html?id=${postId}" class="text-decoration-none">
+                    <div class="card bg-dark text-white shadow-sm h-100">
+                        ${post.imagemUrl
+                        ? `<img src="${post.imagemUrl}" class="card-img-top rounded-top-3" alt="${post.titulo || 'Imagem do post'}">`
+                        : '<div class="card-img-top-placeholder bg-secondary rounded-top-3 text-center py-5">Sem Imagem</div>'}
+                        <div class="card-body">
+                        <h6 class="card-title text-white">${post.titulo || 'Sem título'}</h6>
+                        <!-- <p class="text-white-50 small">${post.tempoLeitura || 'Tempo indeterminado'}</p> -->
                         </div>
-                    </div>`;
+                    </div>
+                    </a>
+                </div>`;
             }
         }
 
