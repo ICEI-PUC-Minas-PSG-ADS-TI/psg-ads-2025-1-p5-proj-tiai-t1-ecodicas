@@ -2,6 +2,35 @@ import { fetchDados } from "./api.js";
 
 const postsContainer = document.getElementById("artigos-em-alta-container");
 
+async function preencherCarrosselComPosts(postsObj) {
+    const carouselInner = document.getElementById("carousel-posts");
+    if (!carouselInner) return;
+
+    // Converter objeto para array e ordenar por data
+    const postsArray = Object.entries(postsObj)
+        .map(([id, post]) => ({ id, ...post }))
+        .sort((a, b) => (b.data || b.timestamp || 0) - (a.data || a.timestamp || 0));
+
+    const recentes = postsArray.slice(0, 3);
+
+    if (recentes.length === 0) {
+        carouselInner.innerHTML = `<div class="carousel-item active"><div class="text-center p-5">Nenhum destaque disponível.</div></div>`;
+        return;
+    }
+
+    carouselInner.innerHTML = recentes.map((post, idx) => `
+        <div class="carousel-item${idx === 0 ? " active" : ""}" data-bs-interval="5000">
+        <a href="detalhe.html?id=${post.id}" class="text-decoration-none">
+            <img src="${post.imagemUrl || 'https://via.placeholder.com/800x400?text=Sem+Imagem'}" class="d-block w-100 carousel-img-limit rounded-3" alt="${post.titulo || 'Imagem do post'}">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>${post.titulo || 'Sem título'}</h5>
+                <p style:"color:black">${post.resumo || post.descricao || ''}</p>
+            </div>
+        </a>
+        </div>
+    `).join('');
+}
+
 async function carregarEExibirPosts() {
     if (!postsContainer) {
         console.error("Elemento 'artigos-em-alta-container' não encontrado no HTML.");
@@ -16,6 +45,8 @@ async function carregarEExibirPosts() {
             postsContainer.innerHTML = '<p class="text-center">Nenhum post encontrado.</p>';
             return;
         }
+
+        preencherCarrosselComPosts(todosOsPosts);
 
         let conteudoHTML = '';
 

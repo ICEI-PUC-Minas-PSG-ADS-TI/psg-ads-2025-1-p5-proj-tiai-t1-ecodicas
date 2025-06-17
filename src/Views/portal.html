@@ -29,20 +29,7 @@
             <a class="nav-link active" href="index.html">Início</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="portal.html">Dicas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contato</a>
-          </li>
-          <li id="restrito" class="nav-item dropdown">
-            <a id="txt" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Acesso restrito
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="gerenciador.html">Gerenciamento</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="editor.html">Publicação</a></li>
-            </ul>
+            <a id="dicas" class="nav-link" href="portal.html">Dicas</a>
           </li>
         </ul>
       </div>
@@ -56,7 +43,7 @@
       <!-- Conteúdo principal -->
       <div class="col-lg-12">
 
-        <!-- Destaque do dia -->
+        <!-- posts mais recentes -->
         <div class="mb-5">
           <h4 class="section-title">Destaques do dia</h4>
           <div class="row g-4">
@@ -67,28 +54,8 @@
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                  <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb" alt="Planta sustentável" class="img-fluid rounded shadow">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Como reduzir o uso de plástico no cotidiano</h5>
-                    <p>Descubra práticas sustentáveis simples que você pode aplicar ainda hoje.</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                  <img src="https://images.unsplash.com/photo-1623239260654-329189722b4b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Second slide label</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <img src="https://plus.unsplash.com/premium_photo-1664300792059-863ccfe55932?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Third slide label</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
-                  </div>
-                </div>
+              <div class="carousel-inner" id="carousel-posts">
+                <!-- Slides serão inseridos aqui -->
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -102,37 +69,14 @@
           </div>
         </div>
 
-        <!-- Lista horizontal -->
         <div class="mb-5">
           <div class="d-flex justify-content-between">
             <h5 class="section-title">Artigos em Alta</h5>
-            <!-- <div class="text-white-50 small">Veja mais →</div> -->
           </div>
-            <!-- Receberá dados do Firebase para preencher os campos -->
-            <div id="artigos-em-alta-container" class="row g-4">
-
-            </div>
-        </div>
-
-        <!-- Outra seção temática -->
-        <div class="mb-5">
-          <h5 class="section-title">Dicas para Economia de Água</h5>
-          <div class="row row-cols-1 row-cols-md-3 g-4">
-
-          <!-- Receberá dados do Firebase para preencher os campos -->
-            <div class="col">
-              <div class="card">
-                <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb" class="card-img-top" alt="">
-                <div class="card-body">
-                  <h6 class="card-title">5 formas de economizar água</h6>
-                  <p class="text-white-50 small">3 min de leitura</p>
-                </div>
-              </div>
-            </div>
-            <!-- Mais cards -->
+          <div id="artigos-em-alta-container" class="row g-4">
+              <!-- Receberá dados do Firebase para preencher os campos -->
           </div>
         </div>
-
       </div>
 
       
@@ -142,13 +86,11 @@
     <div class="container">
         <div class="row">
 
-        <!-- Logo e descrição -->
         <div class="col-md-4 mb-4 mb-md-0">
             <h5 class="fw-bold">EcoDicas</h5>
             <p class="mb-0">Inspiração diária para uma vida mais consciente. 🌱</p>
         </div>
 
-        <!-- Links úteis -->
         <div class="col-md-4 mb-4 mb-md-0">
             <h6 class="fw-bold">Navegação</h6>
             <ul class="list-unstyled">
@@ -158,7 +100,6 @@
             </ul>
         </div>
 
-        <!-- Contato e redes sociais -->
         <div class="col-md-4">
             <h6 class="fw-bold">Fale Conosco</h6>
             <p class="mb-1 text-white-50">eco.dicas@projeto.com</p>
@@ -177,7 +118,6 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script type="module" src="../script/posts.js"></script>
 </body>

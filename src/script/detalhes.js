@@ -39,7 +39,7 @@ async function carregarEExibirDetalhesPost() {
                     ${post.conteudo ? post.conteudo.replace(/\n/g, '<br>') : 'Conteúdo indisponível.'}
                 </div>
                 <!-- Adicione mais campos aqui conforme o seu modelo de dados -->
-                <p class="mt-4"><a href="portal.html" class="btn btn-secondary">Voltar para a lista de dicas</a></p>
+                <p class="mt-4"><a href="portal.html" style="background-color: #0A988B;" class="btn btn-secondary">Voltar para a lista de dicas</a></p>
             </div>
         `;
     } catch (error) {

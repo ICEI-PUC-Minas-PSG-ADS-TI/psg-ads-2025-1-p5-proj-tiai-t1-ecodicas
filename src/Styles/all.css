@@ -11,10 +11,11 @@
     background-color: var(--azul-escuro);
 }
 
-#restrito {
+#dicas {
     background-color: var(--verde-agua);
     border: 0;
     border-radius: 5pt;
+    color:#FDFDFD
 }
 
 #txt {
