@@ -1,6 +1,6 @@
 import { fetchDados } from "./api.js";
 
-const postDetailContainer = document.getElementById("post-detalhe-container"); // Você precisará deste ID em detalhe.html
+const postDetailContainer = document.getElementById("post-detalhe-container");
 
 async function carregarEExibirDetalhesPost() {
     if (!postDetailContainer) {
@@ -11,7 +11,7 @@ async function carregarEExibirDetalhesPost() {
     postDetailContainer.innerHTML = '<p class="text-center">Carregando detalhes do post...</p>';
 
     const urlParams = new URLSearchParams(window.location.search);
-    const postId = urlParams.get("id"); // Pega o 'id' da URL
+    const postId = urlParams.get("id");
 
     if (!postId) {
         postDetailContainer.innerHTML = '<p class="text-center text-danger">ID do post não encontrado na URL.</p>';
@@ -22,7 +22,7 @@ async function carregarEExibirDetalhesPost() {
     console.log("ID do post encontrado na URL:", postId);
 
     try {
-        const post = await fetchDados(postId); // Busca o post específico pelo ID
+        const post = await fetchDados(postId);
 
         if (!post) {
             postDetailContainer.innerHTML = `<p class="text-center text-danger">Post com ID '${postId}' não encontrado.</p>`;
