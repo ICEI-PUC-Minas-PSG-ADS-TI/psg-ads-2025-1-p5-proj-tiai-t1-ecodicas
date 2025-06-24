@@ -1,0 +1,30 @@
+:root {
+    --verde-agua: #0A988B;
+    --azul-escuro: #1C3645;
+    --azul-quase-preto: #061722;
+    --cinza-claro: #CAD6DE;
+    --branco: #FDFDFD;
+    --azul-acinzentado: #112836;
+}
+
+.navbar {
+    background-color: var(--azul-escuro);
+}
+
+#dicas {
+    background-color: var(--verde-agua);
+    border: 0;
+    border-radius: 5pt;
+    color:#FDFDFD
+}
+
+#txt {
+    color: var(--branco);
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--azul-quase-preto);
+    color: var(--branco);
+}
