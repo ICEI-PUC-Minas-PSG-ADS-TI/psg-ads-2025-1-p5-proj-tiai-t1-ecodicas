@@ -7,30 +7,19 @@ _Visão geral da interação do usuário por meio das telas do sistema. Apresent
 
 ## 5.1. Tela principal do sistema
 
-_Descrição da tela principal do sistema._
+_Tela Hohme, onde o usuário pode navegar dentre às funcionaldades do sistema_
 
-[`Tela principal do sistema`](images/)
-
-
-## 5.2. Telas do processo 1
-
-_Descrição da tela relativa à atividade 1._
-
-[`Tela da atividade 1`](images/)
-
-_Descrição da tela relativa à atividade 2._
-
-[`Tela da atividade 2`](images/)
+![`Tela principal do sistema`](https://github.com/user-attachments/assets/52f39495-3ece-4ba7-aae9-c1a537ab015c)
 
 
-## 5.3. Telas do processo 2
 
-_Descrição da tela relativa à atividade 1._
+## 5.2. Telas do processo
 
-[`Tela da atividade 1`](images/)
+_Portal: onde o usuário pode navegar entre as postagens. No topo desta pégina existe um carrosel, que exibe sempre os 3 posts mais recentes._
 
-_Descrição da tela relativa à atividade 2._
-
-[`Tela da atividade 2`](images/)
+![`Tela da atividade 1`](https://github.com/user-attachments/assets/c1a3eb12-41cb-4e5c-a79b-535bfb2cfb41)
 
 
+_Aqui o usuário pode ler todo o conteúdo do artigo publicado.._
+
+![`Tela da atividade 2`](https://github.com/user-attachments/assets/697eeb6c-b87f-44b3-aa49-3e4c857269bd)
